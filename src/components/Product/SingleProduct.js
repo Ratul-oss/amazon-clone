@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { db } from "../../firebase";
+import db from "../../firebase";
 
 const SingleProduct = ({ id, desc, ratingStar, price, productImg }) => {
   const addToCart = () => {

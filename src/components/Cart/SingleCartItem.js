@@ -1,5 +1,5 @@
 import React from "react";
-import { db } from "../../firebase";
+import db from "../../firebase";
 
 const SingleCartItem = ({ img, desc, price, qty, id }) => {
   let options = [];

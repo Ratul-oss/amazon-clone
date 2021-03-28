@@ -14,9 +14,7 @@ const Cart = () => {
     <>
       <section className="cart">
         <div className="Container">
-          <h2 style={{ padding: "5px 0px" }}>
-            Your cart items will appear here.
-          </h2>
+          <h2>Your cart items will appear here.</h2>
           <div className="ContentWrapper">
             {/*  */}
 

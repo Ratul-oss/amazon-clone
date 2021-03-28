@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../Context";
 
 // this nav will remain everywhere
-const Nav = () => {
+const Nav = ({ user, singoutFunc }) => {
   const cartItem = useContext(CartContext);
 
   const getCount = () => {
@@ -17,6 +17,7 @@ const Nav = () => {
     });
     return count;
   };
+
   return (
     <>
       <nav>
@@ -28,6 +29,11 @@ const Nav = () => {
         <div className="nav_search">
           <input type="search" name="searchBar" placeholder="Search Products" />
         </div>
+        <ul className="user_stuffs">
+          <li onClick={singoutFunc}>
+            Hello, <div>{user.name}</div>
+          </li>
+        </ul>
         <ul className="nav_links">
           <li>
             <Link style={{ textDecoration: "none", color: "white" }} to="/cart">

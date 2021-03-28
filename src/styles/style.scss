@@ -53,7 +53,7 @@ a {
 
 // the container
 .Container {
-  width: 950px;
+  width: 1000px;
   margin: auto;
 }
 
@@ -269,6 +269,9 @@ header {
               border: 1px solid #ddd;
               padding: 5px;
               border-radius: 2px;
+              &:focus {
+                outline: none;
+              }
             }
             .delete_button {
               width: 45%;
@@ -299,8 +302,42 @@ header {
       margin: 5px;
       width: 300px;
       background: rgb(255, 255, 255);
-      padding: 10px;
+      padding: 30px 10px;
       border-radius: 5px;
+      .totalPrice {
+        h2 {
+          font-weight: 100;
+          padding: 5px 0px;
+          span {
+            color: rgb(255, 166, 0);
+            text-shadow: 0px 0.1px 1px black;
+          }
+        }
+      }
+      .proceToCheckOutButton {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px;
+        button {
+          width: 100%;
+          padding: 7px 10px;
+          font-size: 1.1rem;
+          border: 2px solid #b88915;
+          outline: none;
+          background: rgb(255, 166, 0);
+          color: white;
+          border-radius: 3px;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 1px 2px 5px rgb(110, 110, 110);
+          }
+          &:active {
+            box-shadow: none;
+            transform: scale(0.9);
+          }
+        }
+      }
     }
   }
 }
@@ -367,9 +404,26 @@ header {
   .cart {
     .ContentWrapper {
       flex-wrap: wrap-reverse;
+      // * cart items
       .cartItems {
         width: 100%;
+        .singleCartItem {
+          flex-direction: column;
+          .cart_image {
+            width: 90%;
+            margin: 10px auto;
+          }
+          .cart_desc_and_options {
+            width: 100%;
+            margin: auto;
+            padding: 5px;
+            .cart_product_desc {
+              padding: 0px 0px;
+            }
+          }
+        }
       }
+      // * cart total
       .cartTotal {
         width: 100%;
       }

@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -20,9 +20,9 @@ img,
 button,
 a {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 ::-moz-selection {
@@ -34,7 +34,7 @@ a {
 }
 
 .Container {
-  width: 950px;
+  width: 1000px;
   margin: auto;
 }
 
@@ -43,12 +43,12 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 10px 0px;
   background: #ffffff;
   background: #131921;
@@ -91,13 +91,13 @@ nav .nav_links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 nav .nav_links li {
@@ -129,24 +129,8 @@ header {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#0d8399),
-    color-stop(#3396a9),
-    color-stop(#73b5be),
-    color-stop(#b0c5cc),
-    to(#fff)
-  );
-  background: linear-gradient(
-    to bottom,
-    #0d8399,
-    #3396a9,
-    #73b5be,
-    #b0c5cc,
-    #fff
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d8399), color-stop(#3396a9), color-stop(#73b5be), color-stop(#b0c5cc), to(#fff));
+  background: linear-gradient(to bottom, #0d8399, #3396a9, #73b5be, #b0c5cc, #fff);
 }
 
 header .HeaderDesc {
@@ -183,13 +167,13 @@ header .HeaderDesc .amazon_music_logo img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .Products .Products_wrapper .singleProduct {
@@ -198,14 +182,14 @@ header .HeaderDesc .amazon_music_logo img {
   padding: 15px;
   border-radius: 10px;
   -webkit-box-shadow: 1px 2px 5px #ddd;
-  box-shadow: 1px 2px 5px #ddd;
+          box-shadow: 1px 2px 5px #ddd;
   margin: 8px;
   min-height: 420px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Products .Products_wrapper .singleProduct .productImg {
@@ -255,14 +239,14 @@ header .HeaderDesc .amazon_music_logo img {
 
 .Products .Products_wrapper .singleProduct .addToCartButton button:hover {
   -webkit-box-shadow: 1px 2px 5px #464646;
-  box-shadow: 1px 2px 5px #464646;
+          box-shadow: 1px 2px 5px #464646;
 }
 
 .Products .Products_wrapper .singleProduct .addToCartButton button:active {
   -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+          transform: scale(0.9);
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .cart {
@@ -276,16 +260,16 @@ header .HeaderDesc .amazon_music_logo img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .cart .ContentWrapper .cartItems {
@@ -303,16 +287,16 @@ header .HeaderDesc .amazon_music_logo img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px;
   border-bottom: 2px solid #e2e2e2;
 }
@@ -321,10 +305,10 @@ header .HeaderDesc .amazon_music_logo img {
   width: 40%;
   margin: 5px 0px;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+      flex-shrink: 0;
   -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 
 .cart .ContentWrapper .cartItems .singleCartItem .cart_image img {
@@ -337,57 +321,35 @@ header .HeaderDesc .amazon_music_logo img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_product_desc {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_product_desc {
   padding: 5px 0px;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_product_desc
-  h2 {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_product_desc h2 {
   font-weight: 100;
   color: dodgerblue;
   padding-bottom: 5px;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_product_desc
-  p {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_product_desc p {
   color: #ffa600;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_options {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,22 +357,16 @@ header .HeaderDesc .amazon_music_logo img {
   padding: 10px 0px;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   outline: none;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_options
-  select {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_options select {
   width: 45%;
   background: white;
   border: 1px solid #ddd;
@@ -418,24 +374,15 @@ header .HeaderDesc .amazon_music_logo img {
   border-radius: 2px;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_options
-  .delete_button {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_options select:focus {
+  outline: none;
+}
+
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_options .delete_button {
   width: 45%;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_options
-  .delete_button
-  button {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_options .delete_button button {
   width: 100%;
   background: #ffa600;
   border: none;
@@ -448,38 +395,66 @@ header .HeaderDesc .amazon_music_logo img {
   transition: 0.3s;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_options
-  .delete_button
-  button:hover {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_options .delete_button button:hover {
   -webkit-box-shadow: 1px 2px 5px #000;
-  box-shadow: 1px 2px 5px #000;
+          box-shadow: 1px 2px 5px #000;
 }
 
-.cart
-  .ContentWrapper
-  .cartItems
-  .singleCartItem
-  .cart_desc_and_options
-  .cart_options
-  .delete_button
-  button:active {
+.cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_options .delete_button button:active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .cart .ContentWrapper .cartTotal {
   margin: 5px;
   width: 300px;
   background: white;
-  padding: 10px;
+  padding: 30px 10px;
   border-radius: 5px;
+}
+
+.cart .ContentWrapper .cartTotal .totalPrice h2 {
+  font-weight: 100;
+  padding: 5px 0px;
+}
+
+.cart .ContentWrapper .cartTotal .totalPrice h2 span {
+  color: #ffa600;
+  text-shadow: 0px 0.1px 1px black;
+}
+
+.cart .ContentWrapper .cartTotal .proceToCheckOutButton {
+  text-align: center;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.cart .ContentWrapper .cartTotal .proceToCheckOutButton button {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 1.1rem;
+  border: 2px solid #b88915;
+  outline: none;
+  background: #ffa600;
+  color: white;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.cart .ContentWrapper .cartTotal .proceToCheckOutButton button:hover {
+  -webkit-box-shadow: 1px 2px 5px #6e6e6e;
+          box-shadow: 1px 2px 5px #6e6e6e;
+}
+
+.cart .ContentWrapper .cartTotal .proceToCheckOutButton button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @media screen and (max-width: 1024px) {
@@ -516,10 +491,28 @@ header .HeaderDesc .amazon_music_logo img {
   }
   .cart .ContentWrapper {
     -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
   .cart .ContentWrapper .cartItems {
     width: 100%;
+  }
+  .cart .ContentWrapper .cartItems .singleCartItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cart .ContentWrapper .cartItems .singleCartItem .cart_image {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+  .cart .ContentWrapper .cartItems .singleCartItem .cart_desc_and_options .cart_product_desc {
+    padding: 0px 0px;
   }
   .cart .ContentWrapper .cartTotal {
     width: 100%;

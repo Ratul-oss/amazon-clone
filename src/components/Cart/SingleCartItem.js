@@ -1,6 +1,7 @@
 import React from "react";
+import { db } from "../../firebase";
 
-const SingleCartItem = ({ img, desc, price, qty }) => {
+const SingleCartItem = ({ img, desc, price, qty, id }) => {
   let options = [];
   for (let i = 1; i < Math.max(qty + 1, 20); i++) {
     options.push(
@@ -9,6 +10,19 @@ const SingleCartItem = ({ img, desc, price, qty }) => {
       </option>
     );
   }
+
+  const changeQuantity = (newQuantity) => {
+    db.collection("cartItems")
+      .doc(id)
+      .update({
+        qty: parseInt(newQuantity),
+      });
+  };
+
+  const deleteItem = (e) => {
+    e.preventDefault();
+    db.collection("cartItems").doc(id).delete();
+  };
   return (
     <>
       <div className="singleCartItem">
@@ -21,9 +35,14 @@ const SingleCartItem = ({ img, desc, price, qty }) => {
             <p>$ {price}</p>
           </div>
           <div className="cart_options">
-            <select value={qty}>{options}</select>
+            <select
+              onChange={(e) => changeQuantity(e.target.value)}
+              value={qty}
+            >
+              {options}
+            </select>
             <div className="delete_button">
-              <button>Delete</button>
+              <button onClick={deleteItem}>Delete</button>
             </div>
           </div>
         </div>

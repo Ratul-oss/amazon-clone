@@ -14,12 +14,15 @@ const Cart = () => {
     <>
       <section className="cart">
         <div className="Container">
+          <h2 style={{ padding: "5px 0px" }}>
+            Your cart items will appear here.
+          </h2>
           <div className="ContentWrapper">
             {/*  */}
 
             {/* passing the data to cartitem.js */}
             <CartItem cartItem={cartItem} />
-            <CartTotal />
+            <CartTotal cartItem={cartItem} />
 
             {/*  */}
           </div>
